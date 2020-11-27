@@ -62,14 +62,14 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.spiral,
+    awful.layout.suit.spiral.dwindle,
+    --awful.layout.suit.tile,
+    --awful.layout.suit.spiral,
     --awful.layout.suit.tile.left,
     --awful.layout.suit.tile.bottom,
     --awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
-    --awful.layout.suit.spiral.dwindle,
     --awful.layout.suit.max,
     --awful.layout.suit.max.fullscreen,
     --awful.layout.suit.magnifier,
@@ -217,12 +217,12 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
+              {description = "show the menubar", group = "programs"}),
     --Rofi please work
     awful.key({modkey}, "r", function() awful.spawn.with_shell("rofi -show drun") end,
-    	      {description = "run rofi run", group = "launcher"}),
+    	      {description = "run rofi run", group = "programs"}),
     awful.key({modkey}, "w", function() awful.spawn.with_shell("rofi -show window") end,
-    	      {description = "run rofi window", group = "launcher"}),
+    	      {description = "run rofi window", group = "programs"}),
     --Volume control
     awful.key({modkey}, "=", function() awful.spawn.with_shell("amixer -q -D pulse set Master 5%+")end, 
         {description = "volume up", group = "audio"}),
@@ -484,6 +484,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 --auto run programs
-awful.spawn.with_shell("feh --bg-scale ~/Pictures/japanSeaWallpaper.jpg")
+awful.spawn.with_shell("feh --bg-scale ~/Pictures/birdCage.jpg")
 awful.spawn.with_shell("/home/happy/.config/polybar/launch.sh")
 awful.spawn.with_shell("picom")

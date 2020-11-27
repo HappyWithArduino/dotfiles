@@ -18,11 +18,11 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #7c6f64
-background-alt = #7c6f64
+background = #3c3836
+background-alt = #3c3836
 ;foreground = ${xrdb:color7:#222}
-foreground = #fbf1c7
-foreground-alt = #fbf1c7
+foreground = #d65d0e
+foreground-alt = #d65d0e
 
 primary = #00000000
 ;#ffb52a
@@ -38,7 +38,7 @@ height = 27
 offset-x = 2.5%
 ;offset-y = 1%
 radius = 10.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -47,7 +47,7 @@ line-size = 0
 line-color = #f00
 
 border-size = 0
-border-color = #FFFFFFFF
+border-color = #fe8019
 
 padding-left = 1
 padding-right = 1
