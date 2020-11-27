@@ -7,7 +7,7 @@
 autoload -U colors && colors
 # prompt 1
 # %n is userm %M is machine, %~ is directory 
-export PS1="%F{240}[%F{166}%n@%M%F{129}:%F{39}%~%F{240}]%F{001}∮ "
+export PS1="%F{249}[%F{208}%n@%M%F{171}:%F{037}%~%F{249}]%F{196}∮ "
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000

@@ -1,6 +1,6 @@
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
-pcall(require, "luarocks.loader")
+--pcall(require, "luarocks.loader")
 
 -- Standard awesome library
 local gears = require("gears")
@@ -484,6 +484,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 --auto run programs
-awful.spawn.with_shell("feh --bg-scale ~/Pictures/gruvboxlight.png")
+awful.spawn.with_shell("feh --bg-scale ~/Pictures/japanSeaWallpaper.jpg")
 awful.spawn.with_shell("/home/happy/.config/polybar/launch.sh")
 awful.spawn.with_shell("picom")
